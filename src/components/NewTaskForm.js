@@ -33,6 +33,7 @@ const NewTaskForm = ({ categories, onTaskFormSubmit }) => {
         id="task-details"
         value={text}
         onChange={handleTextChange}
+        aria-label="Details"
       />
 
       <label htmlFor="task-category">Category:</label>
@@ -40,6 +41,7 @@ const NewTaskForm = ({ categories, onTaskFormSubmit }) => {
         id="task-category"
         value={category}
         onChange={handleCategoryChange}
+        aria-label="Category"
       >
         <option value="">Select a category</option>
         {categories.map((category, index) => (
